@@ -226,4 +226,3 @@ GitHub:
 **Open science. Real data. Reproducible methods.**
 
 </div>
-```
