@@ -23,7 +23,7 @@
 
 I build experimental software focused on real-time communication, distributed systems, low-level computing and alternative network architectures.
 
-My work currently spans web infrastructure, Discord automation, operating-system research, post-quantum cryptography and programming-language design.
+My current work spans web infrastructure, Discord automation, operating-system research, post-quantum cryptography and programming-language design.
 
 ```text
 connection established.
@@ -33,25 +33,55 @@ status: building
 
 ## Current projects
 
-### SkyNavi
+### Jackal
 
-A real-time communication platform and software ecosystem currently under development.
+A real-time web communication platform currently under development.
 
-**Architecture**
+Jackal is designed as a modern chat application combining real-time messaging, voice and video communication with a scalable distributed backend.
+
+#### Architecture
 
 | Layer                     | Technology                            |
 | ------------------------- | ------------------------------------- |
 | Web client                | JavaScript, TypeScript and React      |
 | Real-time communication   | Elixir, Phoenix and Cowboy            |
-| REST services             | Python and Flask                      |
+| REST APIs                 | Python and Flask                      |
 | Voice and video           | WebRTC with the Opus audio codec      |
 | Primary database          | ScyllaDB                              |
 | Database fallback         | PostgreSQL                            |
 | Post-quantum cryptography | CRYSTALS-Kyber and CRYSTALS-Dilithium |
 
-SkyNavi also includes a Discord bot developed in Python.
+```text
+realtime messaging
+voice and video
+distributed infrastructure
+post-quantum security
+```
 
-**Website:** [skynavi.lol](https://www.skynavi.lol)
+---
+
+### SkyNavi
+
+A Python-based Discord bot for exploring the sky and the wider cosmos directly from Discord.
+
+SkyNavi combines astronomy, astrology, tarot, satellite tracking, space observation, ufology and contextual conversation through an expanding collection of slash commands.
+
+Current areas include:
+
+* Real astronomical observation based on location and date
+* Planets, deep-space objects and satellites
+* Solar activity, eclipses and upcoming launches
+* Natal charts, transits and tarot readings
+* Contextual channel interaction
+
+**Website and documentation:** [skynavi.lol](https://www.skynavi.lol)
+
+```python
+await skynavi.observe(
+    location="Girona",
+    date="present_time"
+)
+```
 
 ---
 
@@ -74,9 +104,9 @@ The project investigates how operating systems, identity, networking and low-lev
 
 A low-level programming language being designed from scratch for RXos.
 
-Roxonium combines a simple, readable syntax inspired by Python with the control required for systems programming and native RXos application development.
+Roxonium combines a simple and readable syntax inspired by Python with the control required for systems programming and native RXos application development.
 
-```roxonium
+```python
 system boot:
     initialize network
     establish identity
